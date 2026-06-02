@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body {
+    background-image: linear-gradient(to right, rgb(30, 30, 246), rgb(151, 144, 172));
+    color: rgb(131, 161, 238);
+    text-shadow: 1px 2px 7px rgb(71, 52, 4);
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    border: 1px solid whitesmoke;
+}
