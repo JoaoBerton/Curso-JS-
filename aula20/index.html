@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form action="" method="get" class="form">
-        <p>Nome: </label><input type="text" class="nome"></p>
-        <p>Sobrenome: <input type="text" class="sobrenome"></p>
-        <p>Altura: <input type="text" class="altura"></p>
-        <p>Peso: <input type="text" class="peso"></p>
-
-        <input type="submit" value="Enviar">
-    </form>
+    <div>
+        <form action="" method="get" class="form" required>
+            <p>
+                <span>Nome:</span> <input type="text" class="nome" maxlength="10" required>
+            </p>
+            <p>
+                <span>Sobrenome:</span> <input type="text" class="sobrenome" maxlength="10" required>
+            </p>
+            <p>
+                <span>Altura:</span> <input type="text" class="altura" maxlength="10" required>
+            </p>
+            <p>
+                <span>Peso:</span> <input type="text" class="peso" maxlength="10" required>
+            </p>
+            <input type="submit" value="Enviar" required>
+        </form>
+    </div>
     <div id="res"></div>
 <script src="js/script.js"></script>
 </body>
