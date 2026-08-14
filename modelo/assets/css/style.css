@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --principal-color: blueviolet;
+
+    --principal-font: 'Cinzel', sans-serif;
+    --secundary-font: 'Inter', sans-serif;
+    --submit: 'Noto Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: var(--principal-font);
+    background-color: var(--principal-color);
+    color: rgb(53, 55, 56);
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+section{
+    background-color: lightgrey;
+    max-width: 600px;
+    margin:30px auto;
+    padding: 20px;
+    text-indent: 20px;
+    text-align: justify;
+    border-radius: 15px 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+p {
+ font-family: var(--secundary-font);   
+ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.192);
+}
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(170, 158, 182);
+    border-radius: 10px 5px;
+    padding: 20px;
+}
+
+form, label,  input {
+    margin-bottom: 10px;
+}
+
+input {
+    height: 50px;
+    width: 90%;
+    border:none ;
+}
+input[type = "text"], label.a1 {
+    background-color: rgb(153, 137, 158);
+    overflow: hidden;
+    border-radius: 3px;
+    color: white;
+    padding:2px;
+}
+input[type = "password"], label.a2 {
+    background-color: rgb(153, 137, 158);
+    color: white;
+    overflow: hidden;
+    border-radius: 3px;
+    padding: 2px;
+}
+input[type = "email"], label.a3 {
+    background-color: rgb(153, 137, 158);
+    color: white;
+    overflow: hidden;
+    border-radius: 3px;
+    padding:2px;
+}
+input[type = "number"], label.a4 {
+    background-color: rgb(153, 137, 158);
+    color: white;
+    overflow: hidden;
+    border-radius: 3px;
+    padding:2px;
+}
+input[type = "submit"] {
+    font-weight: bold;
+    background-color: beige;
+    width: 50%;
+    margin: 15px 0;
+}
+input[type = "submit"]:hover {
+    transition-duration: 0.5s;
+    background-color: lightslategray;
+    font-style: oblique;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
