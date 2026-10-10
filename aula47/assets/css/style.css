@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --principal-color: blueviolet;
+
+    --principal-font: 'Cinzel', sans-serif;
+    --secundary-font: 'Inter', sans-serif;
+    --submit: 'Noto Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: var(--principal-font);
+    background-color: var(--principal-color);
+    color: rgb(53, 55, 56);
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+section{
+    background-color: lightgrey;
+    max-width: 600px;
+    margin:30px auto;
+    padding: 20px;
+    text-indent: 20px;
+    text-align: justify;
+    border-radius: 15px 5px;
+    box-shadow: 2px 2px 5px gray;
+}
+h1 {
+    font-size: 1.5em;
+}
+p {
+ font-family: var(--secundary-font);   
+ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.192);
+}
+.timer {
+    font-size: 3em;
+}
+.pause {
+    color: rgb(96, 96, 203);
+}
+button {
+    border-radius: 5px 4px;
+    margin: 5px;
+}
+.iniciar {
+    background-color: rgb(17, 8, 147);
+    color: aliceblue;
+    border: 1px solid lightgray;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.153);
+    padding: 3px 5px;
+}
+.pausar {
+    background-color: rgb(171, 170, 170);
+    border: 1px solid lightgray;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.153);
+    padding: 3px 5px;
+}
+.reiniciar {
+    background-color: rgb(180, 10, 75);
+    color: aliceblue;
+    border: 2px solid lightgray;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.153);
+    padding: 3px 5px;
+}
+.iniciar:hover {
+    background-color: rgb(51, 40, 208);
+    color: rgb(252, 253, 253);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.pausar:hover {
+    background-color: rgb(73, 73, 73);
+    color: aliceblue;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.153);
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.reiniciar:hover {
+    background-color: rgb(100, 35, 60);
+    border: 2px solid lightgray;
+    font-weight: bold;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.153);
+    cursor: pointer;
+    transition: background 0.5s;
+}
